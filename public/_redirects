@@ -1,0 +1,2 @@
+# Replace YOUR-VERCEL-PROJECT.vercel.app with the deployed Vercel domain.
+/api/*  https://YOUR-VERCEL-PROJECT.vercel.app/api/:splat  200

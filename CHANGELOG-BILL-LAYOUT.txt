@@ -1,0 +1,10 @@
+EasyBill targeted billing-page update
+
+Updated only the customer billing page layout and the PDF endpoint needed for direct template-based PDF downloads.
+- Billing opens as a focused screen with Back to dashboard; dashboard header, footer navigation, stats, and floating billing shortcut are hidden while billing is open.
+- Desktop/mobile billing table follows the supplied bill design, with ten item rows, live product search suggestions (two or more characters), selected product price/GST, quantity +/- controls and editable quantity.
+- Subtotal, GST and total update from selected products.
+- Preview, Clear bill, printer format selector, Download PDF, and highlighted Print bill & save controls are arranged along the bottom.
+- PDF download uses the selected paper format and includes the saved shop bill-header template when the template is PNG/JPEG.
+
+No colours, database schema, login flow, admin page, or other customer pages were intentionally redesigned. Please deploy to a staging/preview environment and test a sample bill, PDF, print sizes, and mobile layout before production use.

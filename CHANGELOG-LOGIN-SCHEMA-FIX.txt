@@ -1,0 +1,13 @@
+EasyBill login/schema compatibility fix
+
+Based on the supplied easybill_bill_and_customer_accounts_update.zip.
+
+Changes:
+- Kept the existing UI, billing layout, admin portal, customer accounts, and balance features.
+- Updated backend startup migration so CREATE INDEX statements run only after missing columns are added.
+- Added safe, additive compatibility checks for core and optional columns used by shops, users, products, bills, bill_items, and customer_accounts.
+- Existing records are not intentionally deleted or reset.
+
+Important:
+- The migration runs automatically when the backend starts and needs the existing Turso environment variables.
+- This ZIP has not been tested against the live production Turso database. Back up the database before deploying, and review Vercel logs after deployment.

@@ -1,0 +1,9 @@
+
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://easybill-api.dhanvanthrajinu515.workers.dev/api/$1"
+    }
+  ]
+}

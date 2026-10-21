@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "easybill-api",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-21",
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "FRONTEND_ORIGIN": "https://easybill-wheat.vercel.app"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "easybill-db",
+      "database_id": "cccc2c42-c1ca-4d93-81d7-07bc8de3181e"
+    }
+  ],
+  "rules": [
+    { "type": "Data", "globs": ["**/*.ttf"], "fallthrough": false }
+  ]
+}

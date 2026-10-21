@@ -1,0 +1,20 @@
+{
+  "name": "easybill-cloudflare",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:init:local": "wrangler d1 execute easybill-db --local --file=backend/schema.sql",
+    "db:init:remote": "wrangler d1 execute easybill-db --remote --file=backend/schema.sql"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "hono": "^4.6.0",
+    "pdfkit": "^0.16.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
